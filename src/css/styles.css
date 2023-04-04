@@ -51,11 +51,9 @@ body {
 }
 
 .country-info img {
-  position: absolute;
-  bottom: 82%;
-  left: 4%;
+  display: inline;
 }
 
 .country-info h1 {
-  margin-left: 50px;
+  display: inline;
 }
