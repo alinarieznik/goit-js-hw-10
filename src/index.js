@@ -31,12 +31,16 @@ function OnSearch(e) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
+        refs.listEl.innerHTML = '';
+        refs.divEl.innerHTML = '';
         return;
       }
       renderMarkup(countries);
     })
     .catch(error => {
       Notiflix.Notify.failure('Oops, there is no country with that name');
+      refs.listEl.innerHTML = '';
+      refs.divEl.innerHTML = '';
     });
 }
 
